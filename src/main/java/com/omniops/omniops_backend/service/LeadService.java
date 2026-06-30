@@ -1,0 +1,16 @@
+package com.omniops.omniops_backend.service;
+
+import com.omniops.omniops_backend.entity.Lead;
+
+import java.util.List;
+
+public interface LeadService {
+
+    Lead saveLead(Lead lead);
+
+    List<Lead> getAllLeads();
+
+    Lead getLead(Integer id);
+
+    void deleteLead(Integer id);
+}
